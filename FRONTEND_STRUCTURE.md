@@ -1,45 +1,44 @@
-# LoopWork Mobile Frontend Structure
+# LoopWork Mobile Application Structure (React Native)
 
-This document outlines the directory structure for the LoopWork React Native (Expo) application. The project follows a modular, feature-based organization to ensure scalability and maintainability.
+Aligned with the Web (Next.js) structure.
 
-## Directory Tree
+## Directory Structure
 
 ```text
 src/
-├── api/             # API clients, axios interceptors, and data fetching logic
-├── assets/          # Static assets (images, icons, fonts)
-├── components/      # Reusable UI components
-│   ├── common/      # Basic UI elements (Buttons, Inputs, Cards)
-│   └── layout/      # Layout components (SafeArea, Containers, Headers)
-├── constants/       # App-wide constants, configuration, and API endpoints
-├── context/         # React Context providers (Auth, Theme, Settings)
-├── hooks/           # Custom reusable React hooks
-├── navigation/      # React Navigation configuration and stack definitions
-├── screens/         # Full-screen components organized by feature
-│   ├── auth/        # Login, Register, Forgot Password
-│   └── main/        # Dashboard, Profile, Settings
-├── theme/           # Design system tokens (Colors, Typography, Spacing)
-├── types/           # TypeScript interfaces and type definitions
-└── utils/           # Helper functions and utility classes
+├── components/
+├── navigation/
+├── screens/
+│   ├── admin/            # Grouped admin modules
+│   │   ├── manager-controls/
+│   │   └── super-admin/
+│   ├── address-book/
+│   ├── appeasy/
+│   ├── chatzoom/
+│   ├── dashboard/
+│   ├── docmanagement/
+│   ├── formflow/
+│   ├── information/
+│   ├── inventorymanagement/
+│   ├── login/
+│   ├── messaging/
+│   ├── minutes-of-meeting/
+│   ├── project-manager/
+│   ├── questionnaire/
+│   ├── schedule/
+│   ├── settings/
+│   ├── timecard/
+│   ├── todo-list/
+│   └── user-directory/
+└── utils/
 ```
 
-## Folder Descriptions
+## Screen Folder Pattern
 
-### `src/api/`
-Houses all network-related code. This includes `axios` instance configuration, endpoint definitions, and service-specific api calls.
-
-### `src/components/`
-- **common/**: Generic, atomic components that are used throughout the app.
-- **layout/**: Higher-level components that define the structure of the UI.
-
-### `src/navigation/`
-Contains the navigation logic using `@react-navigation/native`. This is where stacks, tabs, and drawers are defined.
-
-### `src/screens/`
-Each subdirectory within `screens/` represents a major feature or flow. Screens are typically connected to the state or data fetching logic.
-
-### `src/theme/`
-Centralized design system. All colors, font sizes, and spacing should be pulled from here to maintain visual consistency.
-
-### `src/types/`
-Global TypeScript definitions, specifically for API responses, navigation parameters, and shared entity models.
+```text
+ScreenFolderName/
+├── index.tsx      # Main Component
+├── styles.ts     # External Styles
+├── components/    # Screen-specific sub-components
+└── hooks/         # Screen-specific hooks
+```
