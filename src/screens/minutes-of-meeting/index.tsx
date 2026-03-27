@@ -2,8 +2,8 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import { styles } from './styles';
 
-export const DashboardScreen = () => (
+export const MinutesOfMeetingScreen = () => (
   <View style={styles.container}>
-    <Text style={styles.text}>DashboardScreen Placeholder</Text>
+    <Text style={styles.text}>MinutesOfMeetingScreen Placeholder</Text>
   </View>
 );

@@ -1,8 +1,6 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { LoginScreen } from '../screens/login';
 
-export const RootNavigator = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Initial Root Navigator Placeholder</Text>
-  </View>
-);
+export const RootNavigator = () => {
+  return <LoginScreen />;
+};

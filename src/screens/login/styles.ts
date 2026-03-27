@@ -1,14 +1,140 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-  container: { 
-    flex: 1, 
-    justifyContent: 'center', 
-    alignItems: 'center', 
-    backgroundColor: '#020617' 
+  container: {
+    flex: 1,
+    backgroundColor: '#020617',
   },
-  text: { 
-    color: 'white', 
-    fontSize: 20 
-  }
+  background: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+  },
+  content: {
+    flex: 1,
+    paddingHorizontal: 32,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  logoContainer: {
+    marginBottom: 48,
+    position: 'relative',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  logoBlur: {
+    position: 'absolute',
+    width: 160,
+    height: 160,
+    borderRadius: 80,
+    backgroundColor: 'rgba(99, 102, 241, 0.15)',
+  },
+  logoPlaceholder: {
+    width: 140,
+    height: 140,
+    borderRadius: 36,
+    backgroundColor: 'rgba(255, 255, 255, 0.05)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.1)',
+  },
+  textContainer: {
+    alignItems: 'center',
+    marginBottom: 64,
+  },
+  titleWrapper: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 16,
+  },
+  title: {
+    fontSize: 48,
+    fontWeight: '900',
+    color: '#ffffff',
+    letterSpacing: -1.5,
+  },
+  titleHighlight: {
+    color: '#818cf8',
+  },
+  subtitle: {
+    fontSize: 18,
+    color: '#94a3b8',
+    textAlign: 'center',
+    lineHeight: 28,
+    maxWidth: 300,
+    fontWeight: '400',
+  },
+  actionContainer: {
+    width: '100%',
+    borderRadius: 36,
+    overflow: 'hidden',
+  },
+  glassCard: {
+    padding: 28,
+    width: '100%',
+    borderRadius: 36,
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.08)',
+    backgroundColor: 'rgba(0, 0, 0, 0.2)',
+  },
+  primaryButton: {
+    width: '100%',
+    height: 60,
+    marginBottom: 16,
+    borderRadius: 18,
+    overflow: 'hidden',
+    shadowColor: '#6366f1',
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 0.4,
+    shadowRadius: 15,
+    elevation: 8,
+  },
+  gradientButton: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 10,
+  },
+  primaryButtonText: {
+    color: '#ffffff',
+    fontSize: 19,
+    fontWeight: '700',
+    letterSpacing: 0.5,
+  },
+  secondaryButton: {
+    width: '100%',
+    height: 60,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 10,
+    borderRadius: 18,
+    backgroundColor: 'rgba(255, 255, 255, 0.05)',
+    borderWidth: 1.5,
+    borderColor: 'rgba(165, 180, 252, 0.2)',
+  },
+  secondaryButtonText: {
+    color: '#a5b4fc',
+    fontSize: 18,
+    fontWeight: '600',
+  },
+  footer: {
+    position: 'absolute',
+    bottom: 48,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    opacity: 0.5,
+  },
+  footerText: {
+    color: '#64748b',
+    fontSize: 15,
+    fontWeight: '600',
+    textTransform: 'uppercase',
+    letterSpacing: 1.5,
+  },
 });
